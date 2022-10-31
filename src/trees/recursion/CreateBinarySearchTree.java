@@ -14,12 +14,6 @@ class BinarySearchTree {
         this.data = data;
     }
 
-    public void createTree(BinarySearchTree root){
-        //create tree logic here
-
-    }
-
-
 }
 
 
@@ -28,7 +22,7 @@ public class CreateBinarySearchTree {
     BinarySearchTree root;
 
 
-    public BinarySearchTree getTree(int data){
+    public BinarySearchTree createTree(int data){
         root = insertElement(root, data);
         return root;
     }
@@ -52,7 +46,12 @@ public class CreateBinarySearchTree {
     public static void main(String[] args) {
         //fill tree
         CreateBinarySearchTree searchTree = new CreateBinarySearchTree();
-        searchTree.getTree(6);
+        searchTree.createTree(6);
+        searchTree.createTree(5);
+        searchTree.createTree(7);
+        searchTree.createTree(4);
+        searchTree.createTree(8);
+
 
 
     }
