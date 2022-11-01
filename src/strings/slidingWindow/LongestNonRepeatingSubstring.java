@@ -6,8 +6,8 @@ public class LongestNonRepeatingSubstring {
 
     public static void main(String[] args) {
 
-        String s = "abbcd"; //dcba
-       // bruteForce(s);
+        String s = "abbcd"; // o/p: bcd (length: 3)
+        //bruteForce(s);
         hashMapMethodExtraSpace(s);
     }
 
@@ -40,7 +40,8 @@ public class LongestNonRepeatingSubstring {
                 stringBuilder.append(s.charAt(j));
                 maxLen = Math.max(maxLen, stringBuilder.length());
             }
-        }
+         }
         System.out.println(maxLen);
+
     }
 }
