@@ -4,7 +4,7 @@ public class DecimalToBinary {
 
     public static void main(String[] args) {
 
-        int num = 50;
+        int num = 4;
 
         int binaryNum = convertToBinary(num);
         System.out.println(binaryNum);
