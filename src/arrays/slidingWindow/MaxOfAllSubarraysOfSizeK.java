@@ -9,10 +9,12 @@ public class MaxOfAllSubarraysOfSizeK {
         int[] arr = {3, 2, 3, 1, 4, 5, 2, 3, 6};
         int k = 3;
 
-        //int maxSize = 0;
-       // bruteForce(arr, k);
+        doubleLoop(arr, k);
 
-        //sliding window technique O(arr *  k - 1)
+        /**
+         * another approach O(arr * k)
+         */
+
         int maxSoFar;
         ArrayList<Integer> maxNums = new ArrayList<>();
         int ptr1 = 0, ptr2 = 0, numPos;
@@ -35,7 +37,12 @@ public class MaxOfAllSubarraysOfSizeK {
 
     }
 
-    private static void bruteForce(int[] arr, int k) {
+    private static void doubleLoop(int[] arr, int k) {
+
+        /**
+         * time complexity : O(arr * k)
+         */
+
         int maxSoFar;
         ArrayList<Integer> maxValueList = new ArrayList<>();
         for(int i = 0; i <= arr.length - k; i++){

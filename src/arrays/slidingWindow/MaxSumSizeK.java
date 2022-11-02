@@ -15,6 +15,11 @@ public class MaxSumSizeK {
     }
 
     private static void optimised(int[] arr, int k) {
+
+        /**
+         * sliding window O(N)
+         */
+
         int startWindow = 0;
 
         for(int i = 0; i < k; i++){
