@@ -8,9 +8,15 @@ public class SortedSquaredArray {
 
         int[] arr = {1,2,3,4}; // 1,4,9,16
 
-        //O(n * logn)
+        /**
+         *  O(n log n)
+         */
         bruteForce(arr);
 
+
+        /**
+         *  2 pointers technique O(N)
+         */
         int[] squaredArr = optimised(arr);
         for(int element: squaredArr){
             System.out.print(" "+ element);

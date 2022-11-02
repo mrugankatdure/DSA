@@ -9,8 +9,7 @@ public class LongestCommonPrefix {
         //character by character matching (not using trie DS)
         lCP(arr);
 
-        //using trie DS
-
+        //using trie DS (TBD)
     }
 
     private static void lCP(String[] arr) {
@@ -41,10 +40,7 @@ public class LongestCommonPrefix {
 
         int minLen = arr[0].length();
         for(int i = 1; i < arr.length; i++){
-
-            if(arr[i].length() < minLen){
-                minLen = arr[i].length();
-            }
+            minLen = Math.min(minLen, arr[i].length());
         }
         return minLen;
     }
