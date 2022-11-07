@@ -28,8 +28,8 @@ public class LeftViewTree {
             System.out.print("  "+root.data);
         }
 
-        printLeftView(root.right, thisLevel + 1);
         printLeftView(root.left, thisLevel + 1);
+        printLeftView(root.right, thisLevel + 1);
 
     }
 
