@@ -2,11 +2,27 @@ package trees.recursion;
 
 public class LeftViewTree {
 
-    private int level = 0;
+    /**
+     * Print left view of Binary tree
+     *              8
+     *          4       9
+     *       3     5
+     *          4
+     *     left view -> 8,4,3,4
+     *
+     *
+     * Right view -> 8,9,5,4
+     *
+     */
+
+
+
+    private int fugitiveLevel = 0;
 
     static class Tree{
 
         int data;
+
         Tree left, right;
 
         Tree(){
@@ -18,18 +34,21 @@ public class LeftViewTree {
         }
     }
 
-    private void printLeftView(Tree root, int thisLevel){
+    private void printLeftView(Tree root, int leadingLevel){
 
         //base case here
         if(root == null) return;
 
-        if(level < thisLevel){
-            level = thisLevel;
+        if(fugitiveLevel < leadingLevel){
+            fugitiveLevel = leadingLevel;
             System.out.print("  "+root.data);
         }
 
-        printLeftView(root.left, thisLevel + 1);
-        printLeftView(root.right, thisLevel + 1);
+        /**
+         * for right view, simply call root.right first followed by root.left in args
+         */
+        printLeftView(root.left, leadingLevel + 1);
+        printLeftView(root.right, leadingLevel + 1);
 
     }
 
