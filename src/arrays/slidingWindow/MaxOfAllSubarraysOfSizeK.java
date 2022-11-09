@@ -4,6 +4,12 @@ import java.util.ArrayList;
 
 public class MaxOfAllSubarraysOfSizeK {
 
+    /**
+     * Given an array, find the max of all falling within a range equal to K.
+     *
+     * @param args
+     */
+
     public static void main(String[] args) {
 
         int[] arr = {3, 2, 3, 1, 4, 5, 2, 3, 6};

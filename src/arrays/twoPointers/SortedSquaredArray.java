@@ -4,6 +4,13 @@ import java.util.Arrays;
 
 public class SortedSquaredArray {
 
+    /**
+     * With given list of integers, return a new sorted squared array.
+     * Using Arrays.sort yields in O(n log n) time complexity in worst case.
+     * Expected Time complexity is O(n)
+     * @param args
+     */
+
     public static void main(String[] args) {
 
         int[] arr = {1,2,3,4}; // 1,4,9,16

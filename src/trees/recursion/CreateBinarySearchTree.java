@@ -17,6 +17,9 @@ class BinarySearchTree {
 }
 
 
+/**
+ * Helper class to BST
+ */
 public class CreateBinarySearchTree {
 
     BinarySearchTree root;

@@ -4,6 +4,13 @@ import java.util.HashMap;
 
 public class LongestNonRepeatingSubstring {
 
+    /**
+     * Given a String, return the length of the longest non-repeating substring
+     *
+     * @param args
+     */
+
+
     public static void main(String[] args) {
 
         String s = "abbcd"; // o/p: bcd (length: 3)

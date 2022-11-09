@@ -2,6 +2,12 @@ package arrays.recursion;
 
 public class SumOfNums {
 
+    /**
+     * Return the sum of all signed 32-bit integers recursively
+     *
+     * @param args
+     */
+
     public static void main(String[] args) {
 
         int[] arr = {1,2,3,4,5}; // find sum recursively

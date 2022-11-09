@@ -2,6 +2,12 @@ package arrays.slidingWindow;
 
 public class MaxSumSizeK {
 
+    /**
+     * Given an array, find the max sum of numbers with range equal to k.
+     *
+     * @param args
+     */
+
     public static void main(String[] args) {
 
         int[] arr = {100,200,300,400,50}; //op: 700 (300 + 400)
