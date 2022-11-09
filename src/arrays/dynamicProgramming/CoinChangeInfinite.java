@@ -2,6 +2,13 @@ package arrays.dynamicProgramming;
 
 public class CoinChangeInfinite {
 
+    /**
+     * You are given infinite coin denominations in an array with a target as an amount
+     * to make.
+     *
+     * Return the total number of ways to make an amount.
+     * @param args
+     */
 
     public static void main(String[] args) {
 
