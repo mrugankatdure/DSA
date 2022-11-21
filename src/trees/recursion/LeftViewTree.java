@@ -41,7 +41,7 @@ public class LeftViewTree {
 
         if(fugitiveLevel < leadingLevel){
             fugitiveLevel = leadingLevel;
-            System.out.print("  "+root.data);
+            System.out.print("  " +root.data);
         }
 
         /**
