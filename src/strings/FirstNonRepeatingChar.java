@@ -4,7 +4,6 @@ public class FirstNonRepeatingChar {
     public static void main(String[] args) {
 
         String s = "test"; //op -> h [t,e,s,r
-
         bruteForce(s);
 
         // O(N) optimized
@@ -37,6 +36,10 @@ public class FirstNonRepeatingChar {
                 }
             }
             if(!seenDuplicate){
+                if(s.indexOf(String.valueOf(uniqueChar)) != -1
+                        && s.indexOf(String.valueOf(uniqueChar)) < i){
+                    break;
+                }
                 uniqueChar = s.charAt(i);
             }
         }
