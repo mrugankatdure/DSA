@@ -7,7 +7,8 @@ public class ProductOfArrayExceptSelf {
         int[] arr = {1,2,3,4};
 
         //O(n^2)
-       // bruteForce(arr);
+        bruteForce(arr);
+        //O(n) -> time complexity and O(n)
         extraSpace(arr);
 
     }
